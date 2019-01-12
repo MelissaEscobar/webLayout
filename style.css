@@ -1,0 +1,532 @@
+*{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* -----------------------------*/
+
+#chat{
+position: fixed;
+width: 250px;
+height: 80px;
+background: #A2165C;
+bottom: 0;
+right: 20px;
+z-index: 1;
+color: white;
+text-align: center;
+line-height: 40px;
+font-family: 'Dancing Script',cursive;
+font-size: 20px;
+border-radius: 10px;
+cursor: pointer;
+
+}
+
+/* -----------------------------*/
+
+header{
+  position: relative ;
+  margin: 20px auto;
+  width: 1000px;
+  height: 120px;
+}
+
+#logo{
+  position: absolute;
+  top:30px;
+  left: 30px;
+  bottom: 0;
+  right: 0;
+  width: 700px;
+  height: 60px;
+  /*background: #ccc; */
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  text-align: left;
+  line-height: 60px;
+}
+
+#icon{
+  position: absolute;
+  top: 14px;
+  right: 302px;
+  width: 24px;
+  height: 24px;
+}
+
+#icon img{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.red{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background: #ccc;
+  border-radius: 100%;
+  top: 42px;
+  text-align: center;
+  line-height: 42px;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+}
+#img1{
+  right: 120px;
+  background: #A2165C;
+}
+
+#img2{
+  right: 19px;
+  background: #99004C;
+}
+
+#img3{
+  right: 71px;
+  background: #AB296A;
+}
+
+/* -----------------------------*/
+
+nav{
+  position: relative ;
+  margin: auto;
+  width: 1000px;
+  height: 48px;
+}
+
+.button{
+  float:left ;
+  margin: 0 2px;
+  width: 196px;
+  height: 48px;
+  background: pink;
+  text-align: center;
+  line-height: 48px;
+  background: #99004C;
+  color: white;
+  font-family: monospace;
+  border-radius: 5%;
+}
+
+a .button:hover{ /*pseudo class in css. Change the color of the button when mouse pass by */
+  background:rgb(162,22,92, 0.4);
+}
+
+a .button:active{ /*pseudo class in css. Change the color of the button when mouse pass by */
+  background:#800080;
+}
+
+
+/* -----------------------------*/
+
+#top{
+  position: relative ;
+  margin: 20px auto;
+  width: 1000px;
+  height: 192px;
+  /*background: grey;*/
+}
+#top ul{
+  width: 1010px;
+  height: 192px;
+  /*background: rgba(255, 0, 0, 0.5);*/
+}
+
+#top ul li{
+  float: left;
+  width: 331px;
+  height: 192px;
+  margin-right: 3px;
+  text-align: center;
+}
+
+#top ul li h1{
+  font-family: 'Dancing Script', cursive;
+}
+
+
+#top ul li p{
+ font-family: monospace;
+ font-size: 14px;
+ margin: 10px;
+}
+
+#top ul li img{
+  border-radius: 100%;
+  height: 100px;
+}
+
+/* -----------------------------*/
+
+section#home{
+  position: relative ;
+  margin: 80px auto;
+  width: 1000px;
+  height: 453px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+aside#left{
+  position: absolute ;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 453px;
+}
+
+aside#left ul li{
+ background: pink;
+/*  list-style-image: url(st.png);*/
+  list-style-position: inside;
+}
+aside#left h1{
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  background:  #99004C;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+} /*  I made it with
+
+aside#left ul li  h1{ , and it worked too :O*/
+
+aside#left input{
+  padding: 10px;
+  margin: 5px 0;
+  width: 160px;
+}
+
+aside#left ul li form{
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+  font-family: monospace;
+}
+aside#left input[type="text"]{
+  font-family: monospace;
+  background: url(img/ur.png);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+}
+
+aside#left input[type="password"]{
+  font-family: monospace;
+  background: url(img/pr.png);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+}
+
+aside#left input[type="submit"]{
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  width: 160px;
+  background: #99004C;
+  border: 0;
+  color: white;
+}
+
+aside#right ul li{
+  background: pink;
+  padding: 10px;
+  margin: 2px 10px;
+  list-style: circle;
+  list-style-position: inside;
+  list-style-image: url(img/st.png);
+}
+
+aside#right{
+  position: absolute ;
+  left: 0;
+  top: 0px;
+  width: 200px;
+  height: 453px;
+}
+
+aside#right ul li a{
+  text-decoration: none;
+}
+
+#asideRLinks{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  width: 180px;
+  background: #99004C;
+  border: 0;
+  color: white;
+}
+
+
+article{
+  position: absolute ;
+  margin-right: 10px;
+  left: 200px;
+  top: 0;
+  width: 600px;
+  height: 453px;
+}
+
+ article h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+}
+/*note :)
+I thought it was
+section aside article h1{
+It´s just:
+article h1{
+  */
+
+article p img{
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+article p{
+  margin-right: 20px;
+  font-size: 15px;
+  font-family: monospace;
+  text-align: justify;
+}
+
+/* ------------- Section Services  ----------*/
+section#services{
+  position: relative ;
+  margin: 80px auto;
+  width: 1000px;
+  height: 453px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+section#services #servBox{
+  float: left;
+  position: relative;
+  width: 570px;
+  height: 350px;
+  left: 10px;
+  top: -20px;
+  right: 10px;
+  margin: auto;
+  box-shadow: 0px 0px 0px #2222;
+}
+
+section#services #servBox ul#listServ{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 151px;
+  height: 270px;
+}
+
+section#services #servBox ul#listServ li{
+  width: 151px;
+  height: 72px;
+  margin: 10px 0;
+  cursor: pointer;
+  background-size: cover;
+}
+
+
+section#services #servBox ul#vision{
+  position: absolute;
+  top: 20px;
+  left: 170px;
+  width: 390px;
+  height: 315px;
+  background: url(img/books.jpg);
+}
+
+
+/* ------------- Section contact  ----------*/
+section#contact{
+  position: relative ;
+  margin: 80px auto;
+  width: 1000px;
+  height: 453px;
+  font-family: monospace;
+  font-size: 15px;
+  background: white;
+  text-align: center;
+}
+
+section#contact article p{
+  text-align: center;
+  top: auto;
+}
+
+
+section#contact article img{
+  float: left;
+  margin-left: 25px;
+  margin-top: -60px;
+}
+
+
+/* ------------- Section aboutUs  ----------*/
+
+
+section#aboutUs{
+  position: relative ;
+  margin: 80px auto;
+  width: 1000px;
+  height: 453px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+
+/* ------------- BOTTOM ----------------*/
+
+
+
+#bottom{
+  position: relative;
+  margin: auto;
+  /*top: auto;
+  left: auto;*/
+  width: 1000px;
+  height: 200px;
+  background: pink;
+
+}
+
+
+
+#bottom ul li{
+  float: left;
+  width: 250px;
+  height: 200px;
+  line-height: 15px;
+}
+
+#bottom ul li h3{
+  margin: 13px 18px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+#bottom ul li ol{
+  position: relative;
+  top: 5px;
+  left: 10px;
+  width: 234px;
+  height: 80px;
+  font-family:monospace;
+}
+
+#bottom ul li ol li{
+  height: 20px;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+
+}
+
+#bottom ul li img{
+  top: 30px;
+  left: 80px;
+  height: 100px;
+  margin-left: 80px;
+}
+
+#bottom ul li ul{
+  position: relative;
+  top: 11px;
+  left: 15px;
+  width: 200px;
+  height: 50px;
+  /* beautiful color :)
+  background: rgba(0, 250, 250, 0.5); */
+}
+
+#bottom ul li ul li{
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: white;
+  margin: 5px;
+}
+
+#bottom ul li ul li:first-child{
+  background: url(img/fb.png);
+  background-size: cover;
+}
+
+#bottom ul li ul li:nth-child(2){
+  background: url(img/instagram.png);
+  background-size: cover;
+}
+
+#bottom ul li ul li:nth-child(3){
+  background: url(img/twitter.png);
+  background-size: cover;
+}
+
+#bottom ul li ul li:nth-child(4){
+  /* or last-child*/
+  background: url(img/github.png);
+  background-size: cover;
+}
+
+#bottom ul li ul li a{
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+
+/* -----------------------------*/
+/* For a different navigation bar:
+nav{
+position:...;
+margin:...;
+.
+.
+.
+border-bottom:1px solid #bcd1cb; <-- important
+}
+
+for some slideButtons:
+#slideButtons ul{
+position: relative;
+margin: auto;
+width: ...;
+height:...;
+background:...;
+}
+
+*/
+
+footer{
+  position: relative ;
+  margin: 20px auto;
+  width: 1000px;
+  height: 70px;
+  background: pink;
+  font-family: monospace;
+  text-align: center;
+  line-height: 70px;
+}
